@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favourite Places</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="Box">
+        <h1>Places that I've been to 🌍</h1>
+        
+        <form id="form-group" onsubmit="handleAddVisitedPlaces(event)">
+            <label for="location">Location📍</label>
+            <input type="text" id="location" placeholder="Enter the location" required>
+            
+            <label for="landmark">Landmark 😎</label>
+            <input type="text" id="landmark" placeholder="Enter the landmark" required>
+            
+            <label for="timeOfTheYear">Time of the Year ⏱️</label>
+            <input type="text" id="timeOfTheYear" placeholder="e.g. Summer 2024">
+
+            <label for="notes">Notes 📝</label>
+            <textarea id="notes" placeholder="Enter your notes"></textarea>
+            
+            <label for="imageUrl">Image URL 📸</label>
+            <input type="url" id="imageUrl" placeholder="https://example.com/image.jpg">
+            
+            <button type="submit" class="btn-add">Add Visited Place</button>
+        </form>
+            
+        <h2>My Travel List</h2>
+        <ol id="list-of-places"></ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
