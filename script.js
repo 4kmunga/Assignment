@@ -1,4 +1,4 @@
-// Load saved places from LocalStorage when the page starts
+// Load saved places 
 document.addEventListener('DOMContentLoaded', displayPlaces);
 
 function handleAddVisitedPlaces(event) {
